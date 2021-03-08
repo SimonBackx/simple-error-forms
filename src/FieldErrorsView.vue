@@ -1,0 +1,49 @@
+<template>
+    <div ref="errors" :class="{'input-errors': errors.length > 0}">
+        <slot />
+        <div>
+            <template v-for="error in errors">
+                <AnimatedErrorView :key="error.id">
+                    {{ error.human || error.message }}
+                </AnimatedErrorView>
+            </template>
+        </div>
+    </div>
+</template>
+
+<script lang="ts">
+import { SimpleError, SimpleErrors } from '@simonbackx/simple-errors';
+import { Component, Prop, Vue, Watch } from "vue-property-decorator";
+
+import { ErrorBox } from "./ErrorBox"
+import AnimatedErrorView from "./AnimatedErrorView.vue"
+
+@Component({
+    components: {
+        AnimatedErrorView
+    }
+})
+export default class FieldErrorsView extends Vue {
+    @Prop({ default: "" }) errorFields: string;
+    @Prop({ default: null }) errorBox: ErrorBox | null;
+    errors: SimpleError[] = [];
+
+    @Watch('errorBox')
+    onNewErrors(val: ErrorBox) {
+        if (!val) {
+            this.errors = [];
+            return;
+        }
+        let errors: SimpleErrors
+        
+        if (this.errorFields == "*") {
+            errors = val.remaining
+        } else {
+            errors = val.forFields(this.errorFields.split(","))
+        }
+        
+        this.errors = errors.errors
+        val.scrollTo(this.errors, this.$refs.errors as HTMLElement)
+    }
+}
+</script>
