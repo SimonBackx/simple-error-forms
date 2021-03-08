@@ -2,7 +2,7 @@
     "name": "@simonbackx/simple-error-forms",
     "main": "./dist/main.js",
     "types": "./dist/index.d.ts",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "sideEffects": [
         "*.vue",
         "*.css"
@@ -48,9 +48,9 @@
         "webpack-merge": "^4.2.2"
     },
     "peerDependencies": {
+        "@simonbackx/simple-errors": "^1.0.8",
         "vue": "^2.6.11",
         "vue-class-component": "^7.0.2",
-        "vue-property-decorator": "^8.4.1",
-        "@simonbackx/simple-errors": "^1.0.8"
+        "vue-property-decorator": "^8.4.1"
     }
 }
