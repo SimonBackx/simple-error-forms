@@ -455,12 +455,10 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
-"@simonbackx/simple-errors@^1.0.8":
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/@simonbackx/simple-errors/-/simple-errors-1.0.8.tgz#19f130fdb2b98eca6ff026e1f7bb4179719315db"
-  integrity sha512-OAM/3qi0+AnFYAabY3coUXZARPMkVJ7U8lbtofYCIs7HjO8mpP6qiMzhw+ATMd7qQD4qR1W0KYEWz16H8ya8Og==
-  dependencies:
-    uuid "^8.2.0"
+"@simonbackx/simple-errors@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@simonbackx/simple-errors/-/simple-errors-1.3.0.tgz#a2ffbcc942d5950e69fc620bb4a1c7215524a697"
+  integrity sha512-IHPCqWe42zO8Op5PWPMi5IewtlDwwwYfUjAmTjoNF0EAS8PDuKGm5wBLtObRpAgIce8WNRz3S0ZGJ2MCInDHvQ==
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.1"
@@ -6705,10 +6703,10 @@ uuid@^3.3.2, uuid@^3.4.0:
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
 
-uuid@^8.2.0:
-  version "8.3.1"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.1.tgz#2ba2e6ca000da60fce5a196954ab241131e05a31"
-  integrity sha512-FOmRr+FmWEIG8uhZv6C2bTgEVXsHk08kE7mPlrBbEe+c3r9pjceVPgupIfNIhc4yx55H69OXANrUaSuu9eInKg==
+uuid@^8.3.2:
+  version "8.3.2"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
+  integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
 
 v8-compile-cache@^2.0.3, v8-compile-cache@^2.1.1:
   version "2.1.1"
